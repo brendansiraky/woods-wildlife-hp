@@ -1,33 +1,34 @@
 import { useState } from "react";
 import { Phone, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { label: "Services", href: "#services" },
-    { label: "Areas", href: "#areas" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Services", href: "/snake-catching-sunshine-coast" },
+    { label: "Areas", href: "/snake-catcher-mudjimba" },
+    { label: "FAQ", href: "/snake-catching-faq-sunshine-coast" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
     <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/50">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <a href="/" className="text-lg md:text-xl font-bold text-foreground">
+        <Link to="/" className="text-lg md:text-xl font-bold text-foreground">
           Woods Wildlife
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
           <a
             href="tel:0435529657"
@@ -62,14 +63,14 @@ const Header = () => {
         <nav className="md:hidden border-t border-border/50 bg-background pb-6 pt-4">
           <div className="container flex flex-col gap-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.href}
                 onClick={() => setMobileOpen(false)}
                 className="text-base text-muted-foreground hover:text-foreground transition-colors py-1"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
