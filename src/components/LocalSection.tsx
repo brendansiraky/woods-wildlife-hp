@@ -35,7 +35,7 @@ const LocalSection = () => {
 
           <a
             href="#areas"
-            className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-full text-base font-medium hover:bg-foreground/5 transition-colors"
+            className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors"
           >
             View Service Areas
           </a>

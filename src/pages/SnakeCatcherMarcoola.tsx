@@ -26,7 +26,7 @@ const SnakeCatcherMarcoola = () => {
             </div>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
             >
               <Phone className="w-5 h-5" />
               0435 529 657
@@ -76,7 +76,7 @@ const SnakeCatcherMarcoola = () => {
             </div>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
             >
               <Phone className="w-5 h-5" />
               0435 529 657
@@ -100,7 +100,7 @@ const SnakeCatcherMarcoola = () => {
               <p className="text-primary-foreground/60 text-sm mb-10">Available 7 days.</p>
               <a
                 href="tel:0435529657"
-                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
               >
                 <Phone className="w-5 h-5" />
                 Call Now

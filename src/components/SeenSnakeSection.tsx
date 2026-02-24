@@ -36,7 +36,7 @@ const SeenSnakeSection = () => {
 
           <a
             href="tel:0435529657"
-            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity"
+            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
           >
             <Phone className="w-5 h-5" />
             0435 529 657
