@@ -28,14 +28,14 @@ const SnakeCatchingSunshineCoast = () => {
               <p>If you have seen a snake:</p>
             </div>
             <ul className="space-y-3 text-foreground text-base mb-10">
-              {["Keep children and pets indoors", "Maintain a safe distance", "Do not attempt to handle or kill the snake", "Call immediately for professional removal"].map((item) => (
-                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-              ))}
+              {["Keep children and pets indoors", "Maintain a safe distance", "Do not attempt to handle or kill the snake", "Call immediately for professional removal"].map((item) =>
+              <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+              )}
             </ul>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -44,7 +44,7 @@ const SnakeCatchingSunshineCoast = () => {
 
         {/* Snake Catching & Relocation */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Snake Catching & Relocation – Sunshine Coast
@@ -54,15 +54,15 @@ const SnakeCatchingSunshineCoast = () => {
                 <p>Snakes are often encountered in:</p>
               </div>
               <ul className="space-y-3 text-foreground text-base mb-8">
-                {["Yards and garden beds", "Garages and sheds", "Roof cavities", "Retaining walls", "Around water sources and vegetation"].map((item) => (
-                  <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-                ))}
+                {["Yards and garden beds", "Garages and sheds", "Roof cavities", "Retaining walls", "Around water sources and vegetation"].map((item) =>
+                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+                )}
               </ul>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">Woods Wildlife provides:</p>
               <ul className="space-y-3 text-foreground text-base mb-8">
-                {["Safe snake capture", "Responsible relocation in accordance with Queensland wildlife regulations", "Residential and commercial response", "Practical advice to reduce future encounters", "Fully insured service"].map((item) => (
-                  <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-                ))}
+                {["Safe snake capture", "Responsible relocation in accordance with Queensland wildlife regulations", "Residential and commercial response", "Practical advice to reduce future encounters", "Fully insured service"].map((item) =>
+                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+                )}
               </ul>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                 Our focus is safe capture and professional handling in line with state wildlife requirements.
@@ -81,9 +81,9 @@ const SnakeCatchingSunshineCoast = () => {
               <p>If you encounter a snake on your property:</p>
             </div>
             <ul className="space-y-3 text-foreground text-base mb-8">
-              {["Stay calm and keep your distance", "Bring pets and children indoors", "Do not attempt to move or kill the snake", "Keep visual contact only if safe", "Contact a licensed snake catcher immediately"].map((item) => (
-                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-              ))}
+              {["Stay calm and keep your distance", "Bring pets and children indoors", "Do not attempt to move or kill the snake", "Keep visual contact only if safe", "Contact a licensed snake catcher immediately"].map((item) =>
+              <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+              )}
             </ul>
             <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed mb-10">
               <p>Attempting to handle a snake without training is dangerous and increases risk.</p>
@@ -91,8 +91,8 @@ const SnakeCatchingSunshineCoast = () => {
             </div>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -101,7 +101,7 @@ const SnakeCatchingSunshineCoast = () => {
 
         {/* Mudjimba Based */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Mudjimba Based – Servicing Northern Sunshine Coast
@@ -110,9 +110,9 @@ const SnakeCatchingSunshineCoast = () => {
                 <p>Woods Wildlife is based in Mudjimba and focuses on fast response across nearby suburbs including:</p>
               </div>
               <ul className="space-y-3 text-foreground text-base mb-8">
-                {["Marcoola", "Twin Waters", "Pacific Paradise", "Mt Coolum", "Bli Bli", "Coolum"].map((item) => (
-                  <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-                ))}
+                {["Marcoola", "Twin Waters", "Pacific Paradise", "Mt Coolum", "Bli Bli", "Coolum"].map((item) =>
+                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+                )}
               </ul>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                 As a local operator, we understand the coastal environment where snake activity is most common — particularly near bushland, dunes, wetlands and residential gardens.
@@ -128,9 +128,9 @@ const SnakeCatchingSunshineCoast = () => {
               Why Choose Woods Wildlife
             </h2>
             <ul className="space-y-3 text-foreground text-base mb-8">
-              {["Mudjimba-based local operator", "Fast northern Sunshine Coast response", "Professional relocation in line with Queensland regulations", "Fully insured", "Clear, straightforward communication"].map((item) => (
-                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-              ))}
+              {["Mudjimba-based local operator", "Fast northern Sunshine Coast response", "Professional relocation in line with Queensland regulations", "Fully insured", "Clear, straightforward communication"].map((item) =>
+              <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+              )}
             </ul>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
               Our approach is simple: safe capture, responsible relocation, reliable local service.
@@ -154,8 +154,8 @@ const SnakeCatchingSunshineCoast = () => {
               <p className="text-primary-foreground/60 text-sm mb-10">Available 7 days.</p>
               <a
                 href="tel:0435529657"
-                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -165,8 +165,8 @@ const SnakeCatchingSunshineCoast = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default SnakeCatchingSunshineCoast;
