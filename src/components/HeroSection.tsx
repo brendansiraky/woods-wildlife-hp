@@ -14,7 +14,7 @@ const HeroSection = () => {
           Sunshine Coast
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">Licensed local specialist providing fast, safe and humane snake removal across the Sunshine Coast.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">Licensed snake catcher based in Mudjimba providing fast, safe and humane snake removal across the Sunshine Coast, with rapid response throughout Northern Sunshine Coast suburbs.  
 
         </p>
 
