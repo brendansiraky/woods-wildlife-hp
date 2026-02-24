@@ -1,14 +1,14 @@
 const LocalSection = () => {
   const points = [
-    "Prompt attendance",
-    "Safe capture",
-    "Responsible relocation",
-    "Clear communication",
-  ];
+  "Prompt attendance",
+  "Safe capture",
+  "Responsible relocation",
+  "Clear communication"];
+
 
   return (
     <section id="areas" className="bg-card">
-      <div className="container py-20 md:py-28">
+      <div className="container py-20 md:py-28 bg-primary-foreground">
         <div className="max-w-2xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             Mudjimba Based. Local Response.
@@ -25,24 +25,24 @@ const LocalSection = () => {
           </div>
 
           <ul className="space-y-3 text-foreground text-base mb-10">
-            {points.map((p) => (
-              <li key={p} className="flex gap-3">
+            {points.map((p) =>
+            <li key={p} className="flex gap-3">
                 <span>•</span>
                 {p}
               </li>
-            ))}
+            )}
           </ul>
 
           <a
             href="#areas"
-            className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors"
-          >
+            className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors">
+
             View Service Areas
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default LocalSection;

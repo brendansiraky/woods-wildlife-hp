@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 const SeenSnakeSection = () => {
   return (
     <section className="bg-card">
-      <div className="container py-20 md:py-28">
+      <div className="container py-20 md:py-28 bg-primary-foreground">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             Seen a Snake on Your Property?
@@ -36,15 +36,15 @@ const SeenSnakeSection = () => {
 
           <a
             href="tel:0435529657"
-            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-          >
+            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
             <Phone className="w-5 h-5" />
             0435 529 657
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default SeenSnakeSection;
