@@ -67,7 +67,7 @@ const Contact = () => {
                   If you have seen a snake on your property, call immediately for
                   safe and licensed removal.
                 </p>
-                <p>Woods Wildlife is based in Mudjimba and provides professional snake catching and relocation across the northern Sunshine Coast, including Marcoola, Twin Waters, Pacific Paradise, Mt Coolum and Bli Bli. For other Sunshine Coast locations, contact us directly.
+                <p>Woods Wildlife is based in Mudjimba and provides professional snake catching and relocation across the Sunshine Coast, including Marcoola, Twin Waters, Pacific Paradise, Mt Coolum and Bli Bli. For other Sunshine Coast locations, contact us directly.
 
 
 
