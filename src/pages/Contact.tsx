@@ -212,7 +212,7 @@ const Contact = () => {
                 </li>
               )}
             </ul>
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">If you are located in any northern Sunshine Coast suburb, contact us to confirm availability.
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">If you are located in any Sunshine Coast suburb, contact us to confirm availability.
 
 
             </p>
