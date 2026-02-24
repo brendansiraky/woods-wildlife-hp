@@ -10,6 +10,7 @@ import SnakeCatcherMudjimba from "./pages/SnakeCatcherMudjimba";
 import SnakeCatcherMarcoola from "./pages/SnakeCatcherMarcoola";
 import SnakeCatcherTwinWaters from "./pages/SnakeCatcherTwinWaters";
 import SnakeCatchingFAQ from "./pages/SnakeCatchingFAQ";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
             <Route path="/snake-catcher-marcoola" element={<SnakeCatcherMarcoola />} />
             <Route path="/snake-catcher-twin-waters" element={<SnakeCatcherTwinWaters />} />
             <Route path="/snake-catching-faq-sunshine-coast" element={<SnakeCatchingFAQ />} />
+            <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
