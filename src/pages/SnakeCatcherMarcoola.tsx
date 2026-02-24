@@ -26,8 +26,8 @@ const SnakeCatcherMarcoola = () => {
             </div>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -36,7 +36,7 @@ const SnakeCatcherMarcoola = () => {
 
         {/* Snake Activity */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Snake Activity in Marcoola
@@ -46,9 +46,9 @@ const SnakeCatcherMarcoola = () => {
               </p>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">Snakes may be found:</p>
               <ul className="space-y-3 text-foreground text-base mb-8">
-                {["In garden beds", "Under decking", "In sheds and garages", "Along vegetation edges"].map((item) => (
-                  <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-                ))}
+                {["In garden beds", "Under decking", "In sheds and garages", "Along vegetation edges"].map((item) =>
+                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+                )}
               </ul>
               <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed">
                 <p>Common local species include Eastern Brown Snakes, Carpet Pythons and Red-Bellied Black Snakes.</p>
@@ -66,9 +66,9 @@ const SnakeCatcherMarcoola = () => {
             </h2>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">We attend:</p>
             <ul className="space-y-3 text-foreground text-base mb-8">
-              {["Residential homes", "Commercial properties", "Construction sites", "Acreage properties"].map((item) => (
-                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-              ))}
+              {["Residential homes", "Commercial properties", "Construction sites", "Acreage properties"].map((item) =>
+              <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+              )}
             </ul>
             <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed mb-10">
               <p>Snakes are captured and relocated responsibly in line with Queensland wildlife regulations.</p>
@@ -76,8 +76,8 @@ const SnakeCatcherMarcoola = () => {
             </div>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -100,8 +100,8 @@ const SnakeCatcherMarcoola = () => {
               <p className="text-primary-foreground/60 text-sm mb-10">Available 7 days.</p>
               <a
                 href="tel:0435529657"
-                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -111,8 +111,8 @@ const SnakeCatcherMarcoola = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default SnakeCatcherMarcoola;
