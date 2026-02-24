@@ -23,7 +23,7 @@ const SnakeCatcherTwinWaters = () => {
               <p>Woods Wildlife provides professional snake catching services in Twin Waters and surrounding northern coastal suburbs.</p>
               <p>If you encounter a snake, keep your distance and contact a licensed operator immediately.</p>
             </div>
-            <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity">
+            <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -62,7 +62,7 @@ const SnakeCatcherTwinWaters = () => {
               <p>Snakes are safely captured and relocated in accordance with Queensland wildlife regulations.</p>
               <p>For reliable snake removal in Twin Waters, call Woods Wildlife.</p>
             </div>
-            <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity">
+            <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
               <Phone className="w-5 h-5" />
               0435 529 657
             </a>
@@ -80,7 +80,7 @@ const SnakeCatcherTwinWaters = () => {
               </p>
               <p className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-primary-foreground">0435 529 657</p>
               <p className="text-primary-foreground/60 text-sm mb-10">Available 7 days.</p>
-              <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-full text-base font-medium hover:opacity-90 transition-opacity">
+              <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>

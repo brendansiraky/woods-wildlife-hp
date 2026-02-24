@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -13,6 +13,7 @@ const Header = () => {
   const [locationsOpen, setLocationsOpen] = useState(false);
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -50,8 +51,18 @@ const Header = () => {
           <div
             ref={dropdownRef}
             className="relative"
-            onMouseEnter={() => setLocationsOpen(true)}
-            onMouseLeave={() => setLocationsOpen(false)}
+            onMouseEnter={() => {
+              if (closeTimeout.current) {
+                clearTimeout(closeTimeout.current);
+                closeTimeout.current = null;
+              }
+              setLocationsOpen(true);
+            }}
+            onMouseLeave={() => {
+              closeTimeout.current = setTimeout(() => {
+                setLocationsOpen(false);
+              }, 200);
+            }}
           >
             <button
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -61,17 +72,19 @@ const Header = () => {
               <ChevronDown className="w-3.5 h-3.5" />
             </button>
             {locationsOpen && (
-              <div className="absolute top-full left-0 mt-2 w-56 bg-popover border border-border rounded-lg py-2 z-50">
-                {locationLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    to={link.href}
-                    onClick={() => setLocationsOpen(false)}
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                ))}
+              <div className="absolute top-full left-0 pt-1 w-56 z-50">
+                <div className="bg-popover border border-border rounded-lg py-2">
+                  {locationLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      onClick={() => setLocationsOpen(false)}
+                      className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
           </div>
