@@ -31,7 +31,7 @@ const SnakeCatcherTwinWaters = () => {
         </section>
 
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Why Snakes Appear in Twin Waters
@@ -41,9 +41,9 @@ const SnakeCatcherTwinWaters = () => {
               </p>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">Snakes may be found:</p>
               <ul className="space-y-3 text-foreground text-base mb-8">
-                {["Around garden beds", "Near water features", "Under decking", "In garages and storage areas"].map((item) => (
-                  <li key={item} className="flex gap-3"><span>•</span>{item}</li>
-                ))}
+                {["Around garden beds", "Near water features", "Under decking", "In garages and storage areas"].map((item) =>
+                <li key={item} className="flex gap-3"><span>•</span>{item}</li>
+                )}
               </ul>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                 All native snakes are protected and must be handled professionally.
@@ -90,8 +90,8 @@ const SnakeCatcherTwinWaters = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default SnakeCatcherTwinWaters;
