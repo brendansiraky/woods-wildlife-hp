@@ -5,26 +5,26 @@ import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 
 const areas = [
-  "Mudjimba",
-  "Marcoola",
-  "Twin Waters",
-  "Pacific Paradise",
-  "Mt Coolum",
-  "Bli Bli",
-  "Coolum",
-];
+"Mudjimba",
+"Marcoola",
+"Twin Waters",
+"Pacific Paradise",
+"Mt Coolum",
+"Bli Bli",
+"Coolum"];
+
 
 const Contact = () => {
   const [form, setForm] = useState({
     name: "",
     phone: "",
     suburb: "",
-    description: "",
+    description: ""
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
+  {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -39,8 +39,8 @@ const Contact = () => {
         <title>Contact Woods Wildlife | Snake Catcher Mudjimba</title>
         <meta
           name="description"
-          content="Contact Woods Wildlife for professional snake removal in Mudjimba and northern Sunshine Coast suburbs. Call now for prompt response."
-        />
+          content="Contact Woods Wildlife for professional snake removal in Mudjimba and northern Sunshine Coast suburbs. Call now for prompt response." />
+
         <link rel="canonical" href="/contact/" />
       </Helmet>
       <div className="min-h-screen bg-background">
@@ -57,7 +57,7 @@ const Contact = () => {
 
         {/* Intro */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Professional Snake Removal – Mudjimba &amp; Northern Sunshine Coast
@@ -86,8 +86,8 @@ const Contact = () => {
             </h2>
             <a
               href="tel:0435529657"
-              className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-12 py-5 rounded-lg text-lg md:text-xl font-medium hover:opacity-90 transition-opacity"
-            >
+              className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-12 py-5 rounded-lg text-lg md:text-xl font-medium hover:opacity-90 transition-opacity">
+
               <Phone className="w-6 h-6" />
               0435 529 657
             </a>
@@ -97,7 +97,7 @@ const Contact = () => {
 
         {/* Request a Call Back */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Request a Call Back
@@ -111,8 +111,8 @@ const Contact = () => {
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
+                    className="block text-sm font-medium text-foreground mb-2">
+
                     Full Name
                   </label>
                   <input
@@ -122,15 +122,15 @@ const Contact = () => {
                     value={form.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30"
-                  />
+                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30" />
+
                 </div>
 
                 <div>
                   <label
                     htmlFor="phone"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
+                    className="block text-sm font-medium text-foreground mb-2">
+
                     Phone Number
                   </label>
                   <input
@@ -140,15 +140,15 @@ const Contact = () => {
                     value={form.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30"
-                  />
+                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30" />
+
                 </div>
 
                 <div>
                   <label
                     htmlFor="suburb"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
+                    className="block text-sm font-medium text-foreground mb-2">
+
                     Suburb / Location
                   </label>
                   <input
@@ -158,15 +158,15 @@ const Contact = () => {
                     value={form.suburb}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30"
-                  />
+                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30" />
+
                 </div>
 
                 <div>
                   <label
                     htmlFor="description"
-                    className="block text-sm font-medium text-foreground mb-2"
-                  >
+                    className="block text-sm font-medium text-foreground mb-2">
+
                     Brief Description of Situation
                   </label>
                   <textarea
@@ -176,14 +176,14 @@ const Contact = () => {
                     onChange={handleChange}
                     rows={4}
                     required
-                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none"
-                  />
+                    className="w-full px-4 py-4 rounded-lg border border-border bg-background text-foreground text-base focus:outline-none focus:ring-2 focus:ring-primary/30 resize-none" />
+
                 </div>
 
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-                >
+                  className="inline-flex items-center justify-center bg-primary text-primary-foreground px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
                   Submit Request
                 </button>
               </form>
@@ -205,12 +205,12 @@ const Contact = () => {
               Woods Wildlife provides snake catching services across:
             </p>
             <ul className="space-y-3 text-foreground text-base mb-8">
-              {areas.map((area) => (
-                <li key={area} className="flex gap-3">
+              {areas.map((area) =>
+              <li key={area} className="flex gap-3">
                   <span>•</span>
                   {area}
                 </li>
-              ))}
+              )}
             </ul>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
               If you are located in a nearby northern Sunshine Coast suburb,
@@ -221,7 +221,7 @@ const Contact = () => {
 
         {/* Important Reminder */}
         <section className="bg-card">
-          <div className="container py-20 md:py-28">
+          <div className="container py-20 md:py-28 bg-primary-foreground">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
                 Important Reminder
@@ -270,8 +270,8 @@ const Contact = () => {
               </p>
               <a
                 href="tel:0435529657"
-                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
-              >
+                className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -281,8 +281,8 @@ const Contact = () => {
 
         <Footer />
       </div>
-    </>
-  );
+    </>);
+
 };
 
 export default Contact;
