@@ -14,14 +14,14 @@ const HeroSection = () => {
           Sunshine Coast
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">Licensed snake catcher based in Mudjimba providing fast, safe and humane snake removal across the Sunshine Coast, with rapid response throughout Northern Sunshine Coast suburbs.  
+        <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed">Licensed snake catcher based in Mudjimba providing fast, safe and safe snake removal across the Sunshine Coast.
+
+Rapid response throughout Northern Sunshine Coast suburbs.  
 
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-5">
-          <a
-            href="tel:0435529657"
-            className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
+          <a href="tel:0435529657" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
 
             <Phone className="w-5 h-5" />
             Call 0435 529 657
