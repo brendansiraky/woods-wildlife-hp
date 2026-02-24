@@ -15,7 +15,7 @@ const ServicesSection = () => {
         </h2>
 
         <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-          <p>Based in Mudjimba, Woods Wildlife delivers licensed snake catching and responsible relocation across the Sunshine Coast, with a focus on fast response throughout the northern coastal suburbs. 
+          <p>Woods Wildlife delivers licensed snake catching and responsible relocation across the Sunshine Coast, with a focus on fast response throughout the northern coastal suburbs. 
 
 
           </p>
