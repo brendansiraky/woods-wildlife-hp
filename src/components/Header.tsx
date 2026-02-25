@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const locationLinks = [
   { label: "Snake Catcher Mudjimba", href: "/snake-catcher-mudjimba" },
@@ -18,6 +18,7 @@ const Header = () => {
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -68,19 +69,28 @@ const Header = () => {
               }, 200);
             }}
           >
-            <button
+            <Link
+              to="/locations"
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setLocationsOpen(!locationsOpen)}
+              onClick={(e) => {
+                e.preventDefault();
+                setLocationsOpen(!locationsOpen);
+              }}
+              onDoubleClick={() => {
+                setLocationsOpen(false);
+                navigate("/locations");
+                window.scrollTo(0, 0);
+              }}
             >
               Locations
               <ChevronDown className="w-3.5 h-3.5" />
-            </button>
+            </Link>
             {locationsOpen && (
               <div className="absolute top-full left-0 pt-1 w-56 z-50">
                 <div className="bg-popover border border-border rounded-lg py-2 shadow-lg">
                   <Link
                     to="/locations"
-                    onClick={() => setLocationsOpen(false)}
+                    onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
                   >
                     View All Locations →
@@ -90,7 +100,7 @@ const Header = () => {
                     <Link
                       key={link.href}
                       to={link.href}
-                      onClick={() => setLocationsOpen(false)}
+                      onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
                       className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
                     >
                       {link.label}
@@ -170,11 +180,18 @@ const Header = () => {
             </button>
             {mobileLocationsOpen && (
               <div className="flex flex-col gap-3 pl-4">
+                <Link
+                  to="/locations"
+                  onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); window.scrollTo(0, 0); }}
+                  className="text-sm font-medium text-foreground hover:text-primary transition-colors py-1"
+                >
+                  View All Locations →
+                </Link>
                 {locationLinks.map((link) => (
                   <Link
                     key={link.href}
                     to={link.href}
-                    onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); }}
+                    onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); window.scrollTo(0, 0); }}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                   >
                     {link.label}
