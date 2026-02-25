@@ -6,6 +6,10 @@ const locationLinks = [
   { label: "Snake Catcher Mudjimba", href: "/snake-catcher-mudjimba" },
   { label: "Snake Catcher Marcoola", href: "/snake-catcher-marcoola" },
   { label: "Snake Catcher Twin Waters", href: "/snake-catcher-twin-waters" },
+  { label: "Snake Catcher Pacific Paradise", href: "/snake-catcher-pacific-paradise" },
+  { label: "Snake Catcher Mt Coolum", href: "/snake-catcher-mt-coolum" },
+  { label: "Snake Catcher Bli Bli", href: "/snake-catcher-bli-bli" },
+  { label: "Snake Catcher Coolum", href: "/snake-catcher-coolum" },
 ];
 
 const Header = () => {
@@ -73,7 +77,15 @@ const Header = () => {
             </button>
             {locationsOpen && (
               <div className="absolute top-full left-0 pt-1 w-56 z-50">
-                <div className="bg-popover border border-border rounded-lg py-2">
+                <div className="bg-popover border border-border rounded-lg py-2 shadow-lg">
+                  <Link
+                    to="/locations"
+                    onClick={() => setLocationsOpen(false)}
+                    className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+                  >
+                    View All Locations →
+                  </Link>
+                  <div className="border-t border-border my-1" />
                   {locationLinks.map((link) => (
                     <Link
                       key={link.href}
