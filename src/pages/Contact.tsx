@@ -255,6 +255,31 @@ const Contact = () => {
           </div>
         </section>
 
+        {/* Map Section */}
+        <section className="container py-20 md:py-28">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+              Mudjimba Service Location
+            </h2>
+            <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10">
+              Woods Wildlife is based in Mudjimba and provides licensed snake catching and relocation across northern Sunshine Coast suburbs including Marcoola, Twin Waters, Pacific Paradise, Mt Coolum, Bli Bli and Coolum.
+            </p>
+            <div className="w-full rounded-lg overflow-hidden">
+              <iframe
+                title="Mudjimba QLD Australia map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14186.274036654937!2d153.09!3d-26.6125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b937091a6a1d0a7%3A0x400eef17f209270!2sMudjimba%20QLD%204564!5e0!3m2!1sen!2sau!4v1700000000000"
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full"
+              />
+            </div>
+          </div>
+        </section>
+
         {/* Final CTA */}
         <section className="bg-primary text-primary-foreground">
           <div className="container py-20 md:py-28">
@@ -271,7 +296,6 @@ const Contact = () => {
               <a
                 href="tel:0435529657"
                 className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-10 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity">
-
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>

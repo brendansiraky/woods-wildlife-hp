@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SuburbInternalLinks from "@/components/SuburbInternalLinks";
 import { Helmet } from "react-helmet-async";
 
 const SnakeCatcherMtCoolum = () => {
@@ -75,6 +76,8 @@ const SnakeCatcherMtCoolum = () => {
             </a>
           </div>
         </section>
+
+        <SuburbInternalLinks currentSuburb="/snake-catcher-mt-coolum" />
 
         <section className="bg-primary text-primary-foreground">
           <div className="container py-20 md:py-28">

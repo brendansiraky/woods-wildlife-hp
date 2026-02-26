@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SuburbInternalLinks from "@/components/SuburbInternalLinks";
 import { Helmet } from "react-helmet-async";
 
 const SnakeCatcherMudjimba = () => {
@@ -101,17 +102,7 @@ const SnakeCatcherMudjimba = () => {
           </div>
         </section>
 
-        {/* Nearby Areas */}
-        <section className="container py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-              Nearby Areas
-            </h2>
-            <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-              We also service Marcoola, Twin Waters, Pacific Paradise, Mt Coolum and Bli Bli.
-            </p>
-          </div>
-        </section>
+        <SuburbInternalLinks currentSuburb="/snake-catcher-mudjimba" />
 
         {/* Final CTA */}
         <section className="bg-primary text-primary-foreground">

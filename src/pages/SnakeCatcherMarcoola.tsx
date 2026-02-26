@@ -1,6 +1,7 @@
 import { Phone } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SuburbInternalLinks from "@/components/SuburbInternalLinks";
 import { Helmet } from "react-helmet-async";
 
 const SnakeCatcherMarcoola = () => {
@@ -83,6 +84,8 @@ const SnakeCatcherMarcoola = () => {
             </a>
           </div>
         </section>
+
+        <SuburbInternalLinks currentSuburb="/snake-catcher-marcoola" />
 
         {/* Final CTA */}
         <section className="bg-primary text-primary-foreground">
