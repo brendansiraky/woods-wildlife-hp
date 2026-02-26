@@ -91,7 +91,7 @@ const Header = () => {
                   <Link
                     to="/locations"
                     onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
-                    className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-accent transition-colors"
+                    className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-[#F5F7F6] transition-colors"
                   >
                     View All Locations →
                   </Link>
@@ -101,7 +101,7 @@ const Header = () => {
                       key={link.href}
                       to={link.href}
                       onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
-                      className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                      className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-[#F5F7F6] transition-colors"
                     >
                       {link.label}
                     </Link>
