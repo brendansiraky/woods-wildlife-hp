@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ServicesSection = () => {
   const services = [
   "Residential snake catching",
@@ -15,9 +17,7 @@ const ServicesSection = () => {
         </h2>
 
         <div className="space-y-5 text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-          <p>Woods Wildlife delivers licensed snake catching and responsible relocation across the Sunshine Coast, with a focus on fast response throughout the northern coastal suburbs. 
-
-
+          <p>Woods Wildlife delivers licensed snake catching and responsible relocation across the Sunshine Coast, with a focus on fast response throughout the northern coastal suburbs. 
           </p>
           <p>
             We attend residential and commercial properties including homes, units, sheds, roof spaces, construction sites and acreage.
@@ -35,12 +35,11 @@ const ServicesSection = () => {
           )}
         </ul>
 
-        <a
-          href="#services"
+        <Link
+          to="/snake-catching-sunshine-coast"
           className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors">
-
           Learn More About Snake Catching
-        </a>
+        </Link>
       </div>
     </section>);
 

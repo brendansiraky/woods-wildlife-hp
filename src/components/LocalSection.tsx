@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
+
 const LocalSection = () => {
   const points = [
   "Prompt attendance",
   "Safe capture",
   "Responsible relocation",
   "Clear communication"];
-
 
   return (
     <section id="areas" className="bg-card">
@@ -33,16 +34,14 @@ const LocalSection = () => {
             )}
           </ul>
 
-          <a
-            href="#areas"
+          <Link
+            to="/locations"
             className="inline-flex items-center justify-center border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors">
-
-            View Service Locations 
-          </a>
+            View Service Locations
+          </Link>
         </div>
       </div>
     </section>);
-
 };
 
 export default LocalSection;
