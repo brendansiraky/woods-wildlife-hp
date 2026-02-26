@@ -1,5 +1,5 @@
 import { Phone } from "lucide-react";
-
+import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="container py-16 md:py-24 lg:py-32 bg-primary-foreground">
@@ -26,12 +26,11 @@ Rapid response throughout Northern Sunshine Coast suburbs.  
             <Phone className="w-5 h-5" />
             Call 0435 529 657
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors">
-
             Request a Call Back
-          </a>
+          </Link>
         </div>
 
         <p className="text-sm text-muted-foreground">
