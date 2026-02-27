@@ -267,7 +267,7 @@ const Contact = () => {
             <div className="w-full rounded-lg overflow-hidden">
               <iframe
                 title="Mudjimba QLD Australia map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14186.274036654937!2d153.09!3d-26.6125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b937091a6a1d0a7%3A0x400eef17f209270!2sMudjimba%20QLD%204564!5e0!3m2!1sen!2sau!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14186.274036654937!2d153.1069!3d-26.6117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b937091a6a1d0a7%3A0x400eef17f209270!2sMudjimba%20QLD%204564%2C%20Australia!5e0!3m2!1sen!2sau!4v1700000000001"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
