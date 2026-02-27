@@ -259,10 +259,10 @@ const Contact = () => {
         <section className="container py-20 md:py-28">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-              Mudjimba Service Location
+              Service Area Location
             </h2>
             <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-10">
-              Woods Wildlife is based in Mudjimba and provides licensed snake catching and relocation across northern Sunshine Coast suburbs including Marcoola, Twin Waters, Pacific Paradise, Mt Coolum, Bli Bli and Coolum.
+              Woods Wildlife is based in Mudjimba and provides professional snake catching and relocation across the Sunshine Coast, with fast response throughout northern Sunshine Coast suburbs.
             </p>
             <div className="w-full rounded-lg overflow-hidden">
               <iframe
