@@ -1,7 +1,7 @@
 const Footer = () => {
   const links = [
     { label: "Snake Catching", href: "#services" },
-    { label: "Areas", href: "#areas" },
+    { label: "Locations", href: "#areas" },
     { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ];
