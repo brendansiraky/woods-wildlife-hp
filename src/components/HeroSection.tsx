@@ -27,7 +27,7 @@ const HeroSection = () => {
                         Call 0435 529 657
                     </a>
                     <a
-                        href='/contact'
+                        href='/contact#callback'
                         className='inline-flex items-center justify-center gap-2 border border-foreground/20 text-foreground px-8 py-4 rounded-lg text-base font-medium hover:bg-foreground/5 transition-colors'
                     >
                         Request a Call Back
