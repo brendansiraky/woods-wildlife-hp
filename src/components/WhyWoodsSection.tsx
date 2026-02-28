@@ -1,23 +1,23 @@
 const items = [
   {
     title: "Fully Licensed Snake Catcher",
-    desc: "Qualified and insured snake catcher using professional equipment and safe handling practices.",
+    desc: "Fully licensed and insured snake catcher using professional equipment and safe handling practices.",
   },
   {
     title: "Mudjimba Based – Fast Local Response",
-    desc: "Local snake catcher providing rapid attendance across the Northern Sunshine Coast.",
+    desc: "Based in Mudjimba for fast local response across the Northern Sunshine Coast.",
   },
   {
     title: "Safe Humane Snake Relocation",
-    desc: "Snakes safely captured and relocated to appropriate natural habitat whenever possible.",
+    desc: "Snakes safely captured and relocated to suitable natural habitat whenever possible.",
   },
   {
     title: "Simple Flat-Fee Pricing",
-    desc: "Clear upfront pricing with no hidden charges or surprise costs.",
+    desc: "Clear upfront pricing with no hidden charges.",
   },
   {
     title: "Available 24/7",
-    desc: "Reliable emergency snake removal when you need help most.",
+    desc: "Reliable response when you need help most.",
   },
 ];
 
@@ -30,13 +30,13 @@ const WhyWoodsSection = () => {
             Why Woods Wildlife
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-12">
-            Woods Wildlife is a fully licensed snake catcher based in Mudjimba providing fast local response across the Sunshine Coast.
+            Woods Wildlife is a fully licensed snake catcher based in Mudjimba, providing fast local response across the Sunshine Coast.
           </p>
           <div className="space-y-8">
             {items.map((item) => (
               <div key={item.title}>
                 <p className="text-foreground text-base md:text-lg font-bold mb-1">
-                  <span className="text-primary">✓</span> {item.title}
+                  <span className="text-primary">✔</span> {item.title}
                 </p>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed pl-6">
                   {item.desc}
