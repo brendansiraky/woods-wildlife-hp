@@ -17,7 +17,7 @@ const CTASection = () => {
             0435 529 657
           </p>
 
-          <p className="text-primary-foreground/60 text-sm mb-10">Available 7 Days</p>
+          <p className="text-primary-foreground/60 text-sm mb-10">Available 24/7</p>
 
           <a
             href="tel:0435529657"
