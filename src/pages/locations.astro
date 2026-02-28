@@ -13,8 +13,6 @@ const locations = [
   { label: "Snake Catcher Coolum", href: "/snake-catcher-coolum" },
 ];
 
-const suburbs = ["Mudjimba", "Marcoola", "Twin Waters", "Pacific Paradise", "Mt Coolum", "Bli Bli", "Coolum"];
-
 const services = [
   "Licensed snake catching",
   "Safe snake capture",
@@ -61,37 +59,20 @@ const services = [
           <p class="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">
             Snake activity is common across northern Sunshine Coast suburbs, particularly in coastal and bushland areas during warmer months.
           </p>
-          <p class="text-muted-foreground text-base md:text-lg leading-relaxed mb-4">Woods Wildlife provides professional snake catching across:</p>
-          <ul class="space-y-3 text-foreground text-base mb-8">
-            {suburbs.map((item) => (
-              <li class="flex gap-3"><span>&#8226;</span>{item}</li>
+          <p class="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">Woods Wildlife provides professional snake catching across:</p>
+          <ul class="space-y-4">
+            {locations.map((loc) => (
+              <li>
+                <a
+                  href={loc.href}
+                  class="text-base md:text-lg text-foreground font-medium hover:text-primary transition-colors"
+                >
+                  {loc.label} &rarr;
+                </a>
+              </li>
             ))}
           </ul>
-          <p class="text-muted-foreground text-base md:text-lg leading-relaxed">
-            Select your suburb below for local snake catcher information.
-          </p>
         </div>
-      </div>
-    </section>
-
-    <!-- Local Pages -->
-    <section class="container py-20 md:py-28">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-          Local Snake Catcher Pages
-        </h2>
-        <ul class="space-y-4">
-          {locations.map((loc) => (
-            <li>
-              <a
-                href={loc.href}
-                class="text-base md:text-lg text-foreground font-medium hover:text-primary transition-colors"
-              >
-                {loc.label} &rarr;
-              </a>
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
 
