@@ -33,7 +33,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <a href="/" className="flex items-center">
-          <img src={typeof logo === "string" ? logo : (logo as { src: string }).src} alt="Woods Wildlife" className="h-4 md:h-5 w-auto" />
+          <img src={typeof logo === "string" ? logo : (logo as { src: string }).src} alt="Woods Wildlife" className="h-[14.4px] md:h-[18px] w-auto" />
         </a>
 
         {/* Desktop Nav */}

@@ -4,8 +4,33 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Phone } from "lucide-react";
+import type { ReactNode } from "react";
 
-const faqItems = [
+const pricingAnswer = (
+  <div className="space-y-4">
+    <p>Simple flat fee snake removal across the Sunshine Coast — no hidden charges.</p>
+    <div>
+      <p className="font-semibold text-foreground">Daytime (7am–7pm) Call-Out &amp; Removal — $165 flat fee</p>
+      <p>Includes travel, inspection and safe removal or relocation if a snake is present. The standard call-out fee applies for attendance and inspection whether or not the snake is located.</p>
+    </div>
+    <div>
+      <p className="font-semibold text-foreground">After Hours / Weekends — $195 flat fee</p>
+      <p>Same inclusions. Available 24/7 for urgent call-outs.</p>
+    </div>
+    <p>Fully licensed and insured. Fast local response from Mudjimba.</p>
+    <a
+      href="tel:0435529657"
+      className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg text-base font-medium hover:opacity-90 transition-opacity"
+    >
+      <Phone className="w-5 h-5" />
+      Call 0435 529 657
+    </a>
+    <p className="text-sm">Call for immediate assistance.</p>
+  </div>
+);
+
+const faqItems: { question: string; answer: ReactNode }[] = [
   {
     question: "What should I do if I see a snake in my yard?",
     answer: "Stay calm and keep children and pets indoors. Do not attempt to approach, move or kill the snake. Maintain a safe distance and call a licensed snake catcher immediately. Woods Wildlife provides fast snake response across Mudjimba and northern Sunshine Coast suburbs.",
@@ -40,7 +65,7 @@ const faqItems = [
   },
   {
     question: "How much does snake catching cost?",
-    answer: "Call-out fees vary depending on time of day and location. Contact Woods Wildlife directly for current pricing and availability.",
+    answer: pricingAnswer,
   },
   {
     question: "Do snakes hibernate on the Sunshine Coast?",
