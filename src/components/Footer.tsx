@@ -1,9 +1,9 @@
 const Footer = () => {
   const links = [
-    { label: "Snake Catching", href: "#services" },
-    { label: "Locations", href: "#areas" },
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
+    { label: "Snake Catching", href: "/snake-catching-sunshine-coast" },
+    { label: "Locations", href: "/locations" },
+    { label: "FAQ", href: "/snake-catching-faq-sunshine-coast" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
