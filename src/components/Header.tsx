@@ -1,6 +1,5 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
 import logo from "@/assets/logo.svg";
 
 const locationLinks = [
@@ -19,7 +18,6 @@ const Header = () => {
   const [mobileLocationsOpen, setMobileLocationsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const closeTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -34,24 +32,24 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="flex items-center">
-          <img src={logo} alt="Woods Wildlife" className="h-4 md:h-5 w-auto" />
-        </Link>
+        <a href="/" className="flex items-center">
+          <img src={typeof logo === "string" ? logo : (logo as { src: string }).src} alt="Woods Wildlife" className="h-4 md:h-5 w-auto" />
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
-          <Link
-            to="/"
+          <a
+            href="/"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Home
-          </Link>
-          <Link
-            to="/snake-catching-sunshine-coast"
+          </a>
+          <a
+            href="/snake-catching-sunshine-coast"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Snake Catching
-          </Link>
+          </a>
 
           {/* Locations Dropdown */}
           <div
@@ -70,60 +68,51 @@ const Header = () => {
               }, 200);
             }}
           >
-            <Link
-              to="/locations"
+            <button
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              onClick={(e) => {
-                e.preventDefault();
-                setLocationsOpen(!locationsOpen);
-              }}
-              onDoubleClick={() => {
-                setLocationsOpen(false);
-                navigate("/locations");
-                window.scrollTo(0, 0);
-              }}
+              onClick={() => setLocationsOpen(!locationsOpen)}
             >
               Locations
               <ChevronDown className="w-3.5 h-3.5" />
-            </Link>
+            </button>
             {locationsOpen && (
               <div className="absolute top-full left-0 pt-1 w-56 z-50">
                 <div className="bg-popover border border-border rounded-lg py-2 shadow-lg">
-                  <Link
-                    to="/locations"
-                    onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
+                  <a
+                    href="/locations"
+                    onClick={() => { setLocationsOpen(false); }}
                     className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-[#F5F7F6] transition-colors"
                   >
                     View All Locations →
-                  </Link>
+                  </a>
                   <div className="border-t border-border my-1" />
                   {locationLinks.map((link) => (
-                    <Link
+                    <a
                       key={link.href}
-                      to={link.href}
-                      onClick={() => { setLocationsOpen(false); window.scrollTo(0, 0); }}
+                      href={link.href}
+                      onClick={() => { setLocationsOpen(false); }}
                       className="block px-4 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-[#F5F7F6] transition-colors"
                     >
                       {link.label}
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
             )}
           </div>
 
-          <Link
-            to="/snake-catching-faq-sunshine-coast"
+          <a
+            href="/snake-catching-faq-sunshine-coast"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             FAQ
-          </Link>
-          <Link
-            to="/contact"
+          </a>
+          <a
+            href="/contact"
             className="text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
             Contact
-          </Link>
+          </a>
           <a
             href="tel:0435529657"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-medium hover:opacity-90 transition-opacity"
@@ -156,20 +145,20 @@ const Header = () => {
       {mobileOpen && (
         <nav className="md:hidden border-t border-border/50 bg-background pb-6 pt-4">
           <div className="container flex flex-col gap-4">
-            <Link
-              to="/"
+            <a
+              href="/"
               onClick={() => setMobileOpen(false)}
               className="text-base text-muted-foreground hover:text-foreground transition-colors py-1"
             >
               Home
-            </Link>
-            <Link
-              to="/snake-catching-sunshine-coast"
+            </a>
+            <a
+              href="/snake-catching-sunshine-coast"
               onClick={() => setMobileOpen(false)}
               className="text-base text-muted-foreground hover:text-foreground transition-colors py-1"
             >
               Snake Catching
-            </Link>
+            </a>
 
             {/* Mobile Locations */}
             <button
@@ -181,40 +170,40 @@ const Header = () => {
             </button>
             {mobileLocationsOpen && (
               <div className="flex flex-col gap-3 pl-4">
-                <Link
-                  to="/locations"
-                  onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); window.scrollTo(0, 0); }}
+                <a
+                  href="/locations"
+                  onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); }}
                   className="text-sm font-medium text-foreground hover:text-primary transition-colors py-1"
                 >
                   View All Locations →
-                </Link>
+                </a>
                 {locationLinks.map((link) => (
-                  <Link
+                  <a
                     key={link.href}
-                    to={link.href}
-                    onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); window.scrollTo(0, 0); }}
+                    href={link.href}
+                    onClick={() => { setMobileOpen(false); setMobileLocationsOpen(false); }}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors py-1"
                   >
                     {link.label}
-                  </Link>
+                  </a>
                 ))}
               </div>
             )}
 
-            <Link
-              to="/snake-catching-faq-sunshine-coast"
+            <a
+              href="/snake-catching-faq-sunshine-coast"
               onClick={() => setMobileOpen(false)}
               className="text-base text-muted-foreground hover:text-foreground transition-colors py-1"
             >
               FAQ
-            </Link>
-            <Link
-              to="/contact"
+            </a>
+            <a
+              href="/contact"
               onClick={() => setMobileOpen(false)}
               className="text-base text-muted-foreground hover:text-foreground transition-colors py-1"
             >
               Contact
-            </Link>
+            </a>
           </div>
         </nav>
       )}

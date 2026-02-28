@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const allSuburbs = [
   { label: "Snake Catcher Mudjimba", href: "/snake-catcher-mudjimba" },
@@ -39,12 +38,12 @@ const SuburbInternalLinks = ({ currentSuburb }: SuburbInternalLinksProps) => {
           <ul className="space-y-4">
             {filteredSuburbs.map((loc) => (
               <li key={loc.href}>
-                <Link
-                  to={loc.href}
+                <a
+                  href={loc.href}
                   className="text-base md:text-lg text-foreground font-medium hover:text-primary transition-colors"
                 >
                   {loc.label} →
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -61,12 +60,12 @@ const SuburbInternalLinks = ({ currentSuburb }: SuburbInternalLinksProps) => {
             <ul className="space-y-4">
               {siteLinks.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    to={link.href}
+                  <a
+                    href={link.href}
                     className="text-base md:text-lg text-foreground font-medium hover:text-primary transition-colors"
                   >
                     {link.label} →
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>

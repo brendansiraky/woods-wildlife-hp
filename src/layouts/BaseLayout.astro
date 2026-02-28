@@ -1,0 +1,56 @@
+---
+import '@fontsource/dm-sans/400.css';
+import '@fontsource/dm-sans/500.css';
+import '@fontsource/dm-sans/700.css';
+import '../index.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+}
+
+const { title, description, canonical } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Woods Wildlife" />
+    {canonical && <link rel="canonical" href={canonical} />}
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Woods Wildlife",
+      "description": "Licensed snake catcher serving Mudjimba and the Sunshine Coast. Fast, safe and humane snake removal.",
+      "telephone": "0435529657",
+      "url": "https://woodswildlife.com.au",
+      "areaServed": [
+        "Mudjimba",
+        "Marcoola",
+        "Twin Waters",
+        "Pacific Paradise",
+        "Mt Coolum",
+        "Bli Bli",
+        "Coolum",
+        "Sunshine Coast"
+      ],
+      "serviceType": "Snake Catching and Removal",
+      "priceRange": "$$"
+    })} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
