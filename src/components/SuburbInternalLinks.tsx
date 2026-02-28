@@ -12,7 +12,7 @@ const allSuburbs = [
 const siteLinks = [
   { label: "Snake Catching", href: "/snake-catching-sunshine-coast" },
   { label: "Contact Woods Wildlife", href: "/contact" },
-  { label: "View All Locations", href: "/locations" },
+  { label: "Home", href: "/" },
 ];
 
 interface SuburbInternalLinksProps {
@@ -67,7 +67,7 @@ const SuburbInternalLinks = ({ currentSuburb, suburbsTitle, suburbsDescription }
         <div className="container py-20 md:py-28">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-              Services &amp; Locations
+              Services &amp; Contact
             </h2>
             <ul className="space-y-4">
               {siteLinks.map((link) => (
