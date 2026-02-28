@@ -11,12 +11,12 @@ const pricingAnswer = (
   <div className="space-y-4">
     <p>Simple flat fee snake removal across the Sunshine Coast — no hidden charges.</p>
     <div>
-      <p className="font-semibold text-foreground">Daytime (7am–7pm) Call-Out &amp; Removal — $165 flat fee</p>
-      <p>Includes travel, inspection and safe removal or relocation if a snake is present. The standard call-out fee applies for attendance and inspection whether or not the snake is located.</p>
+      <p className="font-semibold text-foreground">Daytime (7am–7pm) Call Out &amp; Removal — $165 flat fee</p>
+      <p>Includes travel, inspection and safe removal or relocation if a snake is present. The standard call out fee applies for attendance and inspection whether or not the snake is located.</p>
     </div>
     <div>
       <p className="font-semibold text-foreground">After Hours / Weekends — $195 flat fee</p>
-      <p>Same inclusions. Available 24/7 for urgent call-outs.</p>
+      <p>Same inclusions. Available 24/7 for urgent call outs.</p>
     </div>
     <p>Fully licensed and insured. Fast local response from Mudjimba.</p>
     <a
