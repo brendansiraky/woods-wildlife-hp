@@ -11,13 +11,13 @@
     --background: 38 20% 94%;
     --foreground: 160 35% 12%;
 
-    --card: 38 18% 91%;
+    --card: 38 20% 94%;
     --card-foreground: 160 35% 12%;
 
     --popover: 38 20% 94%;
     --popover-foreground: 160 35% 12%;
 
-    --primary: 153 91% 12%;
+    --primary: 160 35% 12%;
     --primary-foreground: 38 20% 94%;
 
     --secondary: 38 14% 89%;
@@ -50,10 +50,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }

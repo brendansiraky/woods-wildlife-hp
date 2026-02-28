@@ -3,7 +3,7 @@ import { Phone } from "lucide-react";
 const SeenSnakeSection = () => {
   return (
     <section className="bg-card">
-      <div className="container py-20 md:py-28 bg-primary-foreground">
+      <div className="container py-20 md:py-28">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
             Seen a Snake on Your Property?

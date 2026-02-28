@@ -1,7 +1,8 @@
 import { Phone } from 'lucide-react'
 const HeroSection = () => {
     return (
-        <section className='container py-16 md:py-24 lg:py-32 bg-primary-foreground'>
+        <section className='py-16 md:py-24 lg:py-32'>
+            <div className='container'>
             <div className='max-w-3xl'>
                 <p className='text-xs md:text-sm font-medium tracking-[0.2em] uppercase text-muted-foreground mb-5'>
                     Licensed & Insured · Fast Local Response
@@ -40,6 +41,7 @@ const HeroSection = () => {
                 <p className='text-sm text-muted-foreground'>
                     Available 24/7  · Fast Response · Fully Licensed
                 </p>
+            </div>
             </div>
         </section>
     )

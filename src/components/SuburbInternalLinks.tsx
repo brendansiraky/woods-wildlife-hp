@@ -52,7 +52,7 @@ const SuburbInternalLinks = ({ currentSuburb }: SuburbInternalLinksProps) => {
 
       {/* Services & Locations */}
       <section className="bg-card">
-        <div className="container py-20 md:py-28 bg-primary-foreground">
+        <div className="container py-20 md:py-28">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
               Services &amp; Locations
