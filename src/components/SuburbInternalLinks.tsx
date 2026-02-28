@@ -17,9 +17,11 @@ const siteLinks = [
 
 interface SuburbInternalLinksProps {
   currentSuburb?: string;
+  suburbsTitle?: string;
+  suburbsDescription?: string;
 }
 
-const SuburbInternalLinks = ({ currentSuburb }: SuburbInternalLinksProps) => {
+const SuburbInternalLinks = ({ currentSuburb, suburbsTitle, suburbsDescription }: SuburbInternalLinksProps) => {
   const filteredSuburbs = currentSuburb
     ? allSuburbs.filter((s) => s.href !== currentSuburb)
     : allSuburbs;
@@ -30,10 +32,10 @@ const SuburbInternalLinks = ({ currentSuburb }: SuburbInternalLinksProps) => {
       <section className="container py-20 md:py-28">
         <div className="max-w-2xl">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-            Nearby Snake Catchers
+            {suburbsTitle || "Nearby Snake Catchers"}
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
-            We also provide snake catching services across nearby Sunshine Coast suburbs.
+            {suburbsDescription || "We also provide snake catching services across nearby Sunshine Coast suburbs."}
           </p>
           <ul className="space-y-4">
             {filteredSuburbs.map((loc) => (

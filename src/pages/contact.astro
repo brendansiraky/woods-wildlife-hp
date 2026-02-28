@@ -3,16 +3,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import ContactForm from '@/components/ContactForm';
-
-const areas = [
-  "Mudjimba",
-  "Marcoola",
-  "Twin Waters",
-  "Pacific Paradise",
-  "Mt Coolum",
-  "Bli Bli",
-  "Coolum",
-];
+import SuburbInternalLinks from '@/components/SuburbInternalLinks';
 ---
 
 <BaseLayout
@@ -88,24 +79,7 @@ const areas = [
       </div>
     </section>
 
-    <!-- Service Areas -->
-    <section class="container py-20 md:py-28">
-      <div class="max-w-2xl">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
-          Service Areas
-        </h2>
-        <p class="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">Woods Wildlife provides snake catching services across:</p>
-        <ul class="space-y-3 text-foreground text-base mb-8">
-          {areas.map((area) => (
-            <li class="flex gap-3">
-              <span>&#8226;</span>
-              {area}
-            </li>
-          ))}
-        </ul>
-        <p class="text-muted-foreground text-base md:text-lg leading-relaxed">If you are located in any Sunshine Coast suburb, contact us to confirm availability.</p>
-      </div>
-    </section>
+    <SuburbInternalLinks client:load suburbsTitle="Service Locations" suburbsDescription="Woods Wildlife provides professional snake catching services across the Northern Sunshine Coast including:" />
 
     <!-- Important Reminder -->
     <section class="bg-card">
