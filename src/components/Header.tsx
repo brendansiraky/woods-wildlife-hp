@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Phone, Menu, X, ChevronDown } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import logo from "@/assets/logo.svg";
 
 const locationLinks = [
   { label: "Snake Catcher Mudjimba", href: "/snake-catcher-mudjimba" },
@@ -33,8 +34,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="text-lg md:text-xl font-extrabold text-foreground">
-          Woods Wildlife
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Woods Wildlife" className="h-6 md:h-7 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
