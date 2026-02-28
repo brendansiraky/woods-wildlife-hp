@@ -30,7 +30,7 @@ const WhyWoodsSection = () => {
             Why Woods Wildlife
           </h2>
           <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-12">
-            Fully licensed, Mudjimba-based snake catcher providing fast response across the Sunshine Coast.
+            Fully licensed, Mudjimba based snake catcher providing fast response across the Sunshine Coast.
           </p>
           <div className="space-y-8">
             {items.map((item) => (
