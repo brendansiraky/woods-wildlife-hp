@@ -35,7 +35,7 @@ const HeroSection = () => {
                 </div>
 
                 <p className='text-sm text-muted-foreground'>
-                    $165 Daytime Call Out • Available 24/7 • Fully Licensed
+                    $165 Daytime call out • Available 24/7 • Mudjimba
                 </p>
             </div>
             </div>
