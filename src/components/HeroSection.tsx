@@ -33,8 +33,8 @@ Trusted local service with rapid response throughout Northern Sunshine Coast sub
           </Link>
         </div>
 
-        <p className="text-sm text-muted-foreground">
-          Available 7 Days · Fast Response · Fully Licensed
+        <p className="text-sm text-muted-foreground">Available 24/7  · Fast Response · Fully Licensed
+
         </p>
       </div>
     </section>);
