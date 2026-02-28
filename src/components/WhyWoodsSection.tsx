@@ -36,7 +36,7 @@ const WhyWoodsSection = () => {
             {items.map((item) => (
               <div key={item.title}>
                 <p className="text-foreground text-base md:text-lg font-bold mb-1">
-                  <span className="text-primary">✔</span> {item.title}
+                  <span className="text-primary">✓</span> {item.title}
                 </p>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed pl-6">
                   {item.desc}
