@@ -9,7 +9,7 @@ const SeenSnakeSection = () => {
             Seen a Snake on Your Property?
           </h2>
 
-          <p className="text-muted-foreground text-lg mb-6">If you encounter a snake:</p>
+          <p className="text-muted-foreground text-lg mb-6 font-bold">Here's what to do:</p>
 
           <ul className="text-left max-w-md mx-auto space-y-3 text-muted-foreground text-base mb-8">
             <li className="flex gap-3">
