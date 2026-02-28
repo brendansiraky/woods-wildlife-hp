@@ -35,7 +35,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background border-b border-border">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center">
-          <img src={logo} alt="Woods Wildlife" className="h-5 md:h-6 w-auto" />
+          <img src={logo} alt="Woods Wildlife" className="h-4 md:h-5 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
