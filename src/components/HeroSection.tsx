@@ -11,7 +11,7 @@ const HeroSection = () => {
                 <h1 className='text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[0.9] mb-6'>
                     Snake Catcher
                     <br />
-                    Sunshine Coast
+                    Sunshine Coast.
                 </h1>
 
                 <p className='text-lg md:text-xl text-muted-foreground max-w-xl mb-8 leading-relaxed'>
