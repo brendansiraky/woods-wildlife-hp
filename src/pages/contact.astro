@@ -12,6 +12,14 @@ import SuburbInternalLinks from '@/components/SuburbInternalLinks';
   canonical="/contact/"
 >
   <div class="min-h-screen bg-background">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://woodswildlife.com.au/" },
+      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://woodswildlife.com.au/contact/" }
+    ]
+  })} />
     <Header client:load />
 
     <!-- Page Title -->

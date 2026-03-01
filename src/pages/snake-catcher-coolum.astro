@@ -11,6 +11,43 @@ import SuburbInternalLinks from '@/components/SuburbInternalLinks';
   canonical="/snake-catcher-coolum/"
 >
   <div class="min-h-screen bg-background">
+  <script type="application/ld+json" set:html={JSON.stringify([
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Snake Catcher Coolum Beach",
+      "description": "Professional snake catching, safe capture and humane relocation in Coolum Beach, Sunshine Coast. Licensed and insured. Available 24/7.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Woods Wildlife",
+        "telephone": "+61435529657",
+        "url": "https://woodswildlife.com.au",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Coolum Beach",
+          "addressRegion": "QLD",
+          "postalCode": "4573",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -26.53,
+          "longitude": 153.09
+        }
+      },
+      "areaServed": { "@type": "Place", "name": "Coolum Beach" },
+      "serviceType": "Snake Removal"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://woodswildlife.com.au/" },
+        { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://woodswildlife.com.au/locations/" },
+        { "@type": "ListItem", "position": 3, "name": "Snake Catcher Coolum Beach", "item": "https://woodswildlife.com.au/snake-catcher-coolum/" }
+      ]
+    }
+  ])} />
     <Header client:load />
 
     <section class="container py-20 md:py-28">

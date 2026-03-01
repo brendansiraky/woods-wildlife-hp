@@ -21,6 +21,14 @@ const locations = [
   canonical="/locations/"
 >
   <div class="min-h-screen bg-background">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://woodswildlife.com.au/" },
+      { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://woodswildlife.com.au/locations/" }
+    ]
+  })} />
     <Header client:load />
 
     <!-- Hero -->
@@ -79,7 +87,7 @@ const locations = [
     </section>
 
     <!-- Services & Contact -->
-    <section class="bg-card">
+    <section>
       <div class="container py-20 md:py-28">
         <div class="max-w-2xl">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
