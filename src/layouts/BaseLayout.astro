@@ -33,21 +33,47 @@ const { title, description, canonical } = Astro.props;
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Woods Wildlife",
-      "description": "Licensed snake catcher serving Mudjimba and the Sunshine Coast. Fast, safe and humane snake removal.",
-      "telephone": "0435529657",
+      "description": "Fully licensed snake catcher based in Mudjimba providing fast, safe and professional snake removal and relocation across the Sunshine Coast. Available 24/7.",
+      "telephone": "+61435529657",
       "url": "https://woodswildlife.com.au",
+      "logo": "https://woodswildlife.com.au/logo.svg",
+      "image": "https://woodswildlife.com.au/logo.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mudjimba",
+        "addressRegion": "QLD",
+        "postalCode": "4564",
+        "addressCountry": "AU"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -26.6117,
+        "longitude": 153.1069
+      },
       "areaServed": [
-        "Mudjimba",
-        "Marcoola",
-        "Twin Waters",
-        "Pacific Paradise",
-        "Mt Coolum",
-        "Bli Bli",
-        "Coolum",
-        "Sunshine Coast"
+        {
+          "@type": "City",
+          "name": "Sunshine Coast"
+        },
+        { "@type": "Place", "name": "Mudjimba" },
+        { "@type": "Place", "name": "Marcoola" },
+        { "@type": "Place", "name": "Twin Waters" },
+        { "@type": "Place", "name": "Pacific Paradise" },
+        { "@type": "Place", "name": "Mount Coolum" },
+        { "@type": "Place", "name": "Bli Bli" },
+        { "@type": "Place", "name": "Coolum Beach" }
       ],
-      "serviceType": "Snake Catching and Removal",
-      "priceRange": "$$"
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "AUD",
+      "paymentAccepted": "Cash, Credit Card"
     })} />
   </head>
   <body>

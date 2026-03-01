@@ -9,6 +9,47 @@ import Footer from '@/components/Footer';
   description="Mudjimba-based Sunshine Coast snake catcher providing fast, professional snake removal and relocation. Call now for prompt response."
   canonical="/snake-catching-sunshine-coast/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Snake Catching and Removal",
+    "description": "Professional snake catching, safe capture and humane relocation across the Sunshine Coast. Licensed and insured. Available 24/7.",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Woods Wildlife",
+      "telephone": "+61435529657",
+      "url": "https://woodswildlife.com.au",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mudjimba",
+        "addressRegion": "QLD",
+        "postalCode": "4564",
+        "addressCountry": "AU"
+      }
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": "Sunshine Coast"
+    },
+    "serviceType": "Snake Removal",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Daytime Call Out & Removal",
+        "description": "Daytime (7am–7pm) snake call out and removal including travel, inspection and safe removal or relocation.",
+        "price": "165",
+        "priceCurrency": "AUD"
+      },
+      {
+        "@type": "Offer",
+        "name": "After Hours / Weekend Call Out & Removal",
+        "description": "After hours and weekend snake call out and removal. Available 24/7 for urgent call outs.",
+        "price": "195",
+        "priceCurrency": "AUD"
+      }
+    ]
+  })} />
+
   <div class="min-h-screen bg-background">
     <Header client:load />
 

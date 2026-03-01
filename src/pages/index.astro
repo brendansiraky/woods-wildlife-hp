@@ -16,6 +16,53 @@ import Footer from '@/components/Footer';
   description="Licensed snake catcher serving Mudjimba and the Sunshine Coast. Fast, safe and humane snake removal. Call 0435 529 657."
   canonical="/"
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What should I do if I see a snake?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stay calm, keep children and pets indoors, maintain a safe distance and call a licensed snake catcher immediately. Do not attempt to approach, move or kill the snake."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can you arrive?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Response times depend on demand and location. We aim to attend as quickly as possible across Mudjimba, Marcoola, Twin Waters, Mt Coolum and surrounding suburbs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Woods Wildlife is a licensed wildlife operator providing professional snake catching and relocation in accordance with Queensland regulations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you relocate snakes or kill them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Snakes are safely captured and relocated in accordance with Queensland wildlife regulations. All native snakes are protected by law."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does snake removal cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Simple flat fee snake removal across the Sunshine Coast with no hidden charges. Daytime (7am-7pm) call out and removal is $165 flat fee including travel, inspection and safe removal or relocation. After hours and weekends is $195 flat fee with the same inclusions. Available 24/7 for urgent call outs. Fully licensed and insured. Fast local response from Mudjimba."
+        }
+      }
+    ]
+  })} />
+
   <div class="min-h-screen bg-background">
     <Header client:load />
     <HeroSection client:load />
