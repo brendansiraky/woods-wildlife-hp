@@ -14,7 +14,7 @@ const SeenSnakeSection = () => {
           <ul className="text-left max-w-md mx-auto space-y-3 text-muted-foreground text-base mb-8">
             <li className="flex gap-3">
               <span className="text-foreground">•</span>
-              Keep children and pets indoors
+              Keep children and pets indoors and away from the snake
             </li>
             <li className="flex gap-3">
               <span className="text-foreground">•</span>
