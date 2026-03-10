@@ -9,7 +9,7 @@ const items = [
   },
   {
     title: "Safe Humane Snake Relocation",
-    desc: "Snakes safely captured and relocated to suitable natural habitat whenever possible.",
+    desc: "Snakes safely captured and relocated to suitable natural habitat.",
   },
   {
     title: "Simple Flat-Fee Pricing",
